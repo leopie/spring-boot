@@ -22,6 +22,13 @@ public class Customer {
     public Customer() {
     }
 
+    public Customer(Integer id, String name, String email, Integer age) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.age = age;
+    }
+
     public Integer getId() {
         return id;
     }

@@ -12,17 +12,17 @@ public class CustomerMapper {
 
     public Customer dtoToEntity(CustomerDto customerDto) {
         Customer customer = new Customer();
-        if(customerDto.id()!=null) {
-            customer.setId(customerDto.id());
+        if(customerDto.getId()!=null) {
+            customer.setId(customerDto.getId());
         }
-        if(customerDto.name()!=null) {
-            customer.setName(customerDto.name());
+        if(customerDto.getName()!=null) {
+            customer.setName(customerDto.getName());
         }
-        if(customerDto.email()!=null) {
-            customer.setEmail(customerDto.email());
+        if(customerDto.getEmail()!=null) {
+            customer.setEmail(customerDto.getEmail());
         }
-        if(customerDto.age()!=null) {
-            customer.setAge(customerDto.age());
+        if(customerDto.getAge()!=null) {
+            customer.setAge(customerDto.getAge());
         }
         return customer;
     }
